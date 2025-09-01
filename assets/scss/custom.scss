@@ -1,0 +1,84 @@
+/* Reduce any overlay effect in sliders/hero blocks */
+.wg-slider .carousel-item::before,
+.home-section .bg-overlay,
+.home-section .hb-bg-overlay,
+.home-section .home-section-bg {
+  background: transparent !important;
+  opacity: 0 !important;
+  display: none !important;
+}
+/* Ensure slide background image shows */
+.wg-slider .carousel-item {
+  background-color: transparent !important;
+}
+#home-hero .hero-title {
+  font-size: clamp(35px, 4.5vw, 48.5px);
+  line-height: 1.1;
+}
+
+/* Navbar brand icon — size, spacing, vertical alignment */
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;  /* centers icon & text */
+  gap: 0;               /* we use margin-right on the icon instead */
+}
+
+.navbar-brand::before {
+  content: "";
+  display: inline-block;
+  width: 30px;                /* your chosen size */
+  height: 30px;
+  background-image: url("/media/icon.png?v=3");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.25rem;      /* spacing between icon and text */
+  vertical-align: middle;
+  transform: translateY(0.75px); /* ↓ nudge down; try 1–3px */
+}
+
+/* optional: slightly smaller + smaller nudge on mobile */
+@media (max-width: 640px) {
+  .navbar-brand::before { width: 26px; height: 26px; transform: translateY(1px); }
+}
+
+/* Responsive 16:9 video embed */
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px; /* optional rounded corners */
+}
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
+
+/* Latest News spacing tune */
+#news-list.tight-news {
+  /* extra space after the section title only */
+  .section-heading { margin-bottom: 1.25rem; }
+
+  /* tighter lines inside the list */
+  .view-compact { line-height: 1.5; }
+
+  /* tighten common bits used by compact views */
+  .view-compact .article-title { margin-bottom: 0.25rem; line-height: 1.5; }
+  .view-compact .article-metadata,
+  .view-compact .summary { margin-bottom: 0.15rem; }
+
+  /* tighten gaps between items (cover multiple templates) */
+  .view-compact .list-unstyled > li,
+  .view-compact .media.stream-item,
+  .view-compact .archive-item {
+    margin-bottom: 0.15rem;
+    padding-bottom: 0.35rem;
+  }
+}

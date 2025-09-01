@@ -4,18 +4,19 @@ date: 2022-10-24
 
 type: landing
 
-sections:
+
+sections:   
   - block: people
     content:
-      title: Meet the Team
+      title: 
       # Choose which groups/teams of users to display.
       #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
       user_groups:
-          - Principal Investigators
-          - Researchers
-          - Grad Students
-          - Administration
-          - Visitors
+          - Principal Investigator
+          - Team Members
+          - Postdoctoral Fellows
+          - Graduate Students
+          - Undergraduate Research Assistants
           - Alumni
       sort_by: Params.last_name
       sort_ascending: true
