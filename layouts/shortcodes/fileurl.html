@@ -1,0 +1,8 @@
+{{- $p := .Get 0 -}}
+{{- /* Try page-bundle resource first (e.g. content/research/figure1.jpg) */ -}}
+{{- with .Page.Resources.GetMatch $p -}}
+  {{- .RelPermalink -}}
+{{- else -}}
+  {{- /* Fallback: treat as a site path (e.g. "files/figure1.jpg") */ -}}
+  {{- $p | relURL -}}
+{{- end -}}
