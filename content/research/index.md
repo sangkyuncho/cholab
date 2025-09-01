@@ -41,7 +41,7 @@ sections:
               <div class="d-flex flex-column h-100">
                 <h5 class="mb-2 text-muted text-sentencecase text-center" style="letter-spacing:.02em;">Molecular Signaling Networks that Govern (Myo)fibroblast Plasticity</h5>
                 <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
-                  <img src="files/figure1.jpg" alt="Chemo-Mechanical Signaling Networks that Govern Cell Plasticity" class="w-100 h-100" style="object-fit: cover;">
+                  <img src="/files/figure1.jpg" alt="Chemo-Mechanical Signaling Networks that Govern Cell Plasticity" class="w-100 h-100" style="object-fit: cover;">
                 </div>
                 <p class="mt-3 mb-0">
                   Our cells have the remarkable ability to sense and respond to a wide range of microenvironment cues—including both biochemical signals and mechanical stimuli—but how exactly these combined inputs are processed simultaneously remains incompletely understood. In the Cho Lab, we study under what circumstances soluble and insoluble cues <strong>synergize with or antagonize each other</strong>, and how this crosstalk affects or directs: (i) cell state plasticity, (ii) sex- and disease-specificity, and (iii) intercellular communication mechanisms in fibrotic remodeling and tissue repair.  
@@ -54,7 +54,7 @@ sections:
                 <h5 class="mb-2 text-muted text-sentencecase text-center" style="letter-spacing:.02em;">Cardiovascular Engineering Across Multiple Scales</h5>
                 <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
                   <video class="w-100 h-100" autoplay loop muted playsinline preload="metadata" style="object-fit: cover; background:#000;">
-                    <source src="files/figure2.mp4" type="video/mp4">
+                    <source src="/files/figure2.mp4" type="video/mp4">
                   </video>
                 </div>
                 <p class="mt-3 mb-0">
@@ -67,7 +67,7 @@ sections:
               <div class="d-flex flex-column h-100">
                 <h5 class="mb-2 text-muted text-sentencecase text-center" style="letter-spacing:.02em;">Bioinformatics/AI-guided Precision Medicine</h5>
                 <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
-                  <img src="files/figure3.jpg" alt="Multi-omics and data" class="w-100 h-100" style="object-fit: cover;">
+                  <img src="/files/figure3.jpg" alt="Multi-omics and data" class="w-100 h-100" style="object-fit: cover;">
                 </div>
                 <p class="mt-3 mb-0">
                   We combine molecular tools with cutting-edge multi-omics (scRNA- & scATAC-seq, spatial, and proteomics) and AI-based methods to enable new druggable target identification, conduct large-scale <em>in silico</em> drug screening, map protein interactomes, and perform transcription factor activity fingerprinting. We are particularly interested in applying such tools to better characterize the functional diversity and state plasticity of cardiac stomal populations across various disesase states—a critical challenge for the development of <strong>precision anti-fibrotic therapies</strong>.
