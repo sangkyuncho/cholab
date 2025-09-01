@@ -19,7 +19,7 @@ sections:
           position: right
           color: '#666'
       - title: Systems mechanobiology & <br>regenerative engineering
-        content: We develop and apply methods in tissue/materials engineering, molecular biology, and data science to address important biological questions and medical challenges.
+        content: We develop and apply methods in molecular biology, tissue/materials engineering, and data science to investigate fundamental biological questions and to develop solutions to pressing medical challenges.
         align: left
         background:
           image:
@@ -29,7 +29,7 @@ sections:
           position: center
           color: '#555'
       - title: Our mission
-        content: Our long-term goal is to develop **new therapies** for treating fibrosis-associated diseases and conditions, which span cardiovascular disease, cancer, and aging.
+        content: Our long-term goal is to develop new **precision therapies** for treating fibrosis-associated diseases and conditions, which span cardiovascular disease, cancer, and aging.
         align: right
         background:
           image:
