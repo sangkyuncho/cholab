@@ -52,6 +52,11 @@ jobs:
           map:
             provider: google
             api_key: "${{ secrets.HUGOxPARAMSxMAPxAPI_KEY }}"
+          features:
+            map:
+              provider: google
+              zoom: 15
+              api_key: "${{ secrets.HUGOxPARAMSxMAPxAPI_KEY }}"
           YAML
       - name: Build with Hugo
         env:

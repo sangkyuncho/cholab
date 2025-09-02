@@ -98,9 +98,14 @@ features:
       index_name: ''
       show_logo: false
   map:
-    provider: 'google'
-    api_key: ''
+    provider: google
+    api_key: ""     # leave blank in repo
     zoom: 15
+  features:
+    map:
+      provider: google
+      api_key: ""   # leave blank in repo
+      zoom: 15
 
 # Extensions
 
