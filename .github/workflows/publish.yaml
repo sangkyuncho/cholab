@@ -45,20 +45,23 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Inject Maps key into production params (temp file)
+      - name: Inject Maps key into production config
         run: |
-          mkdir -p config/_default
-          cat > config/_default/params.production.yaml <<'YAML'
+          mkdir -p config/production
+          cat > config/production/params.yaml <<'YAML'
           map:
             provider: google
             api_key: "${{ secrets.HUGOxPARAMSxMAPxAPI_KEY }}"
           YAML
       - name: Build with Hugo
         env:
-          HUGO_ENVIRONMENT: production     
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
         run: |
-          echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          echo "=== Dumping resolved Hugo params (secret will appear masked as ****) ==="
+          hugo config --format yaml | sed -n '/^params:/,/^[^ ]/p'
+          echo "=== Building site ==="
+          hugo --minify --environment production --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
