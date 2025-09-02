@@ -45,12 +45,17 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Inject Maps key into production params (temp file)
+        run: |
+          mkdir -p config/_default
+          cat > config/_default/params.production.yaml <<'YAML'
+          map:
+            provider: google
+            api_key: "${{ secrets.HUGOxPARAMSxMAPxAPI_KEY }}"
+          YAML
       - name: Build with Hugo
         env:
-          HUGO_ENVIRONMENT: production
-          HUGOxPARAMSxMAPxAPI_KEY: ${{ secrets.HUGOxPARAMSxMAPxAPI_KEY }}
-          # Core Hugo convention (also maps to params.map.api_key)
-          HUGO_PARAMS_MAP_api_key: ${{ secrets.HUGOxPARAMSxMAPxAPI_KEY }}        
+          HUGO_ENVIRONMENT: production     
         run: |
           echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
