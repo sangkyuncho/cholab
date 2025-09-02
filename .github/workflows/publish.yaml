@@ -49,6 +49,8 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
           HUGOxPARAMSxMAPxAPI_KEY: ${{ secrets.HUGOxPARAMSxMAPxAPI_KEY }}
+          # Core Hugo convention (also maps to params.map.api_key)
+          HUGO_PARAMS_MAP_api_key: ${{ secrets.HUGOxPARAMSxMAPxAPI_KEY }}        
         run: |
           echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
