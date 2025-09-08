@@ -1,0 +1,15 @@
+<style>
+/* Navbar brand icon — baseURL-aware URL emitted by Hugo */
+.navbar-brand{display:inline-flex;align-items:center}
+.navbar-brand::before{
+  content:"";
+  display:inline-block;
+  width:30px;height:30px;
+  background-image:url('{{ "media/icon.png?v=4" | relURL }}');
+  background-repeat:no-repeat;background-size:contain;
+  margin-right:.25rem;vertical-align:middle;transform:translateY(.75px)
+}
+@media (max-width:640px){
+  .navbar-brand::before{width:26px;height:26px;transform:translateY(1px)}
+}
+</style>

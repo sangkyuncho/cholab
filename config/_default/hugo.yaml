@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Cho Laboratory # Website name
-baseURL: 'https://cholab.com/' # Website URL
+baseURL: 'https://sangkyuncho.github.io/cholab/' # Website URL
 
 ############################
 ## LANGUAGE
