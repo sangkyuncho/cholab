@@ -1,0 +1,118 @@
+<script>
+/**
+ * Reliable Google Maps init for Wowchemy/Hugo Blox Contact block.
+ * - Waits for google.maps and #map to exist
+ * - Uses hidden inputs (#map-lat, #map-lng, #map-zoom)
+ * - If the theme already created a map, it nudges (resize + re-center)
+ * - If not, it creates one via GMaps.js
+ */
+(function () {
+  var SEL = {
+    map: '#map',
+    lat: '#map-lat',
+    lng: '#map-lng',
+    zoom: '#map-zoom'
+  };
+
+  function readConfig() {
+    var lat = parseFloat((document.querySelector(SEL.lat) || {}).value);
+    var lng = parseFloat((document.querySelector(SEL.lng) || {}).value);
+    var zoom = parseInt((document.querySelector(SEL.zoom) || {}).value, 10) || 15;
+    if (!isFinite(lat) || !isFinite(lng)) return null;
+    return { lat: lat, lng: lng, zoom: zoom };
+  }
+
+  function hasTiles(el) {
+    // Google injects .gm-style into the map div when tiles are rendered
+    return !!(el && el.querySelector('.gm-style'));
+  }
+
+  function nudgeExistingMaps() {
+    try {
+      if (!window.google || !google.maps) return false;
+      var nudged = false;
+      // Common globals some themes expose
+      [window.map, window.maps, window.hbMap].forEach(function (m) {
+        if (m && m instanceof google.maps.Map) {
+          google.maps.event.trigger(m, 'resize');
+          var c = m.getCenter && m.getCenter();
+          if (c) m.setCenter(c);
+          nudged = true;
+        }
+      });
+      // Universal layout nudge
+      window.dispatchEvent(new Event('resize'));
+      return nudged;
+    } catch (e) { return false; }
+  }
+
+  function initIfMissing() {
+    var box = document.querySelector(SEL.map);
+    if (!box) return; // container not in DOM yet
+    if (hasTiles(box)) return; // already good
+
+    // If theme made a map but it rendered off-screen, a resize usually fixes it
+    if (nudgeExistingMaps() && hasTiles(box)) return;
+
+    // If no map exists yet, create one with GMaps.js (already loaded by the theme)
+    if (!window.GMaps) return; // gmaps script not ready yet
+    var cfg = readConfig();
+    if (!cfg) return;
+
+    // Create or replace a global handle for future nudges
+    try {
+      window.hbMap = new GMaps({
+        div: SEL.map,
+        lat: cfg.lat,
+        lng: cfg.lng,
+        zoom: cfg.zoom
+      });
+      window.hbMap.addMarker({ lat: cfg.lat, lng: cfg.lng });
+      // Final nudge to ensure tiles paint
+      setTimeout(function () {
+        google.maps.event.trigger(window.hbMap.map, 'resize');
+        window.hbMap.setCenter(cfg.lat, cfg.lng);
+      }, 120);
+    } catch (e) {
+      /* swallow and retry via backoff below */
+    }
+  }
+
+  // Retry loop with gentle backoff to cover async script loading
+  function retryUntilReady(maxTries) {
+    var tries = 0, delay = 120;
+    (function tick() {
+      if (window.google && google.maps && document.querySelector(SEL.map)) {
+        initIfMissing();
+        if (document.querySelector(SEL.map) && hasTiles(document.querySelector(SEL.map))) return;
+      }
+      if (++tries < (maxTries || 12)) setTimeout(tick, delay), delay *= 1.5;
+    })();
+  }
+
+  // Observe when the contact section appears (covers SPA-like transitions)
+  var target = document.querySelector('#contact, [data-section-id="contact"], section#contact');
+  if (target && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          setTimeout(retryUntilReady, 60);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -10% 0px' });
+    io.observe(target);
+  }
+
+  // Also try on common lifecycle events
+  window.addEventListener('pageshow', function(){ retryUntilReady(); });
+  document.addEventListener('visibilitychange', function(){
+    if (document.visibilityState === 'visible') retryUntilReady();
+  });
+  window.addEventListener('hashchange', function(){ retryUntilReady(); });
+
+  // In case DOM is already there
+  document.readyState === 'complete'
+    ? retryUntilReady()
+    : window.addEventListener('load', function(){ retryUntilReady(); });
+})();
+</script>
