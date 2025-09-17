@@ -44,7 +44,7 @@ sections:
                   <img src='{{< fileurl "figure1.jpg" >}}' alt="Figure 1" class="w-100 h-100" style="object-fit: cover;">
                 </div>
                 <p class="mt-3 mb-0">
-                  Our cells have the remarkable ability to sense and respond to a wide range of microenvironment cues—including both biochemical signals and mechanical stimuli—but how exactly these combined inputs are processed simultaneously remains incompletely understood. In the Cho Lab, we study under what circumstances soluble and insoluble cues <strong>synergize with or antagonize each other</strong>, and how this crosstalk affects or directs: (i) cell state plasticity, (ii) sex- and disease-specificity, and (iii) intercellular communication mechanisms in fibrotic remodeling and tissue repair.  
+                  Our cells are remarkably responsive to a wide range of microenvironment cues—including both biochemical signals and mechanical stimuli—but how exactly these combined inputs are processed simultaneously remains incompletely understood. In the Cho Lab, we study under what circumstances soluble and insoluble cues <strong>synergize with or antagonize each other</strong>, and how this crosstalk incluences: (i) cell state plasticity, (ii) sex- and disease-specificity, and (iii) intercellular communication mechanisms in fibrotic remodeling and tissue repair.  
                 </p>
               </div>
             </div>
@@ -58,7 +58,7 @@ sections:
                   </video>
                 </div>
                 <p class="mt-3 mb-0">
-                  Our team has extensive expertise in human induced pluripotent stem cell (iPSC)-based engineered tissues as well as several animal models. We routinely work with: (i) cells cultured on tunable biomaterials, (ii) arrays of multi-cell type cardiac organoids and spheroids, (iii) engineered heart tissue and heart-on-a-chip models, (iv) <em>ex vivo</em> chick embryonic hearts, and (v) several mouse disease models. For every biological phemonon we study, we take a <strong>systems-level approach</strong> to examine, engineer, characterize, manipulate, and cross-validate across multiple scales. 
+                  Our team has extensive expertise in human induced pluripotent stem cell (iPSC)-based engineered tissues as well as several animal models. We routinely work with: (i) cells cultured on tunable biomaterials, (ii) arrays of multi-cell type cardiac organoids and spheroids, (iii) engineered heart tissue and 'heart-on-a-chip' systems, (iv) <em>ex vivo</em> chick embryonic hearts, and (v) mouse disease models. For every biological phemonon we study, we take a <strong>systems approach</strong> to examine, engineer, characterize, manipulate, and cross-validate across multiple scales. 
                 </p>
               </div>
             </div>
@@ -70,7 +70,7 @@ sections:
                   <img src='{{< fileurl "figure3.jpg" >}}' alt="Multi-omics and data" class="w-100 h-100" style="object-fit: cover;">
                 </div>
                 <p class="mt-3 mb-0">
-                  We combine molecular tools with cutting-edge multi-omics (scRNA- & scATAC-seq, spatial, and proteomics) and AI-based methods to enable new druggable target identification, conduct large-scale <em>in silico</em> drug screening, map protein interactomes, and perform transcription factor activity fingerprinting. We are particularly interested in applying such tools to better characterize the functional diversity and state plasticity of cardiac stomal populations across various disesase states—a critical challenge for the development of <strong>precision anti-fibrotic therapies</strong>.
+                  We combine molecular tools with cutting-edge multi-omics (scRNA- & scATAC-seq, spatial, and proteomics) and AI/ML-based methods to enable new druggable target identification, conduct large-scale <em>in silico</em> drug screening, map protein interactomes, and perform transcription factor activity fingerprinting. We are particularly interested in applying such tools to better characterize the functional diversity and state plasticity of cardiac stomal populations across various disesase states—a critical challenge for the development of <strong>precision anti-fibrotic therapies</strong>.
                 </p>
               </div>
             </div>

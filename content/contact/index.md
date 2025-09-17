@@ -27,6 +27,7 @@ sections:
  
 
   - block: contact
+    id: contact
     content:
       title: Join our team!
       text: |-
