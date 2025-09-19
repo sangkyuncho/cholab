@@ -23,13 +23,13 @@ bio:
 
 interests:
   - Stem cells & regenerative medicine
-  - Cardiovascular engineering
+  - Cardiovascular tissue engineering
   - Systems mechanobiology
   - Multi-omics & data science
 
 education:
   courses:
-    - course: Postdoctoral Fellowship, Stanford University School of Medicine
+    - course: Postdoc, Stanford University School of Medicine
       institution: 
       year: 
     - course: PhD, University of Pennsylvania
@@ -76,7 +76,7 @@ user_groups:
 ---
 
 
-**Sangkyun ('Sang') Cho, PhD,** is an Assistant Professor in the Department of Chemical & Biomolecular Engineering and the Department of Biomedical Engineering (secondary) at Johns Hopkins University, where he is also a Core Faculty member of the Institute for NanoBioTechnology (INBT) and the Center for Microphysiological Systems (MPS). His lab brings together tissue/biomaterials engineering, systems biology, and regenerative medicine to tackle fibrosis---a key driver of disease and aging across nearly all of our solid organs. He is particularly interested in developing precision 'mechanotherapies' for treating cardiovascular fibrosis and heart failure.
+**Sangkyun ('Sang') Cho, PhD,** is an Assistant Professor in the Department of Chemical & Biomolecular Engineering with a secondary appointment in the Department of Biomedical Engineering at Johns Hopkins University. He is a Core Faculty member of the Institute for NanoBioTechnology (INBT) and the Center for Microphysiological Systems (MPS). His lab brings together tissue/biomaterials engineering, systems biology, and regenerative medicine to tackle fibrosis---a key driver of disease and aging across nearly all of our solid organs. He is particularly interested in developing precision 'mechanotherapies' for treating cardiovascular fibrosis and heart failure.
 
 Sang is the recipient of multiple honors and awards, including the NIH F32 Postdoctoral Fellowship (2020), the _Journal of Molecular and Cellular Cardiology_ 'Paper of the Year' Award (2021), the American Heart Association Career Development Award (2023), and the NIH K99/R00 Pathway to Independence Award (2023).
 
