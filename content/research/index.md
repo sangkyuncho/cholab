@@ -44,7 +44,7 @@ sections:
                   <img src='{{< fileurl "figure1.jpg" >}}' alt="Figure 1" class="w-100 h-100" style="object-fit: cover;">
                 </div>
                 <p class="mt-3 mb-0">
-                  Our cells are remarkably responsive to a wide range of microenvironment cues—including both biochemical signals and mechanical stimuli—but how exactly these combined inputs are processed simultaneously remains incompletely understood. In the Cho Lab, we study under what circumstances soluble and insoluble cues <strong>synergize with or antagonize each other</strong>, and how this crosstalk incluences: (i) cell state plasticity, (ii) sex- and disease-specificity, and (iii) intercellular communication mechanisms in fibrotic remodeling and tissue repair.  
+                  Our cells are remarkably responsive to a wide range of microenvironment cues—including both biochemical (soluble) signals and mechanical (insoluble) stimuli—but how these combined inputs are processed simultaneously remains incompletely understood. In the Cho Lab, we study under what circumstances soluble and insoluble cues <strong>synergize with or antagonize each other</strong>, and how this crosstalk influences: (i) cell state plasticity, (ii) sex- and disease-specificity, and (iii) intercellular communication mechanisms in fibrotic remodeling and tissue repair.  
                 </p>
               </div>
             </div>
@@ -70,7 +70,7 @@ sections:
                   <img src='{{< fileurl "figure3.jpg" >}}' alt="Multi-omics and data" class="w-100 h-100" style="object-fit: cover;">
                 </div>
                 <p class="mt-3 mb-0">
-                  We combine molecular tools with cutting-edge multi-omics (scRNA- & scATAC-seq, spatial, and proteomics) and AI/ML-based methods to enable new druggable target identification, conduct large-scale <em>in silico</em> drug screening, map protein interactomes, and perform transcription factor activity fingerprinting. We are particularly interested in applying such tools to better characterize the functional diversity and state plasticity of cardiac stomal populations across various disesase states—a critical challenge for the development of <strong>precision anti-fibrotic therapies</strong>.
+                  We combine molecular tools with cutting-edge multi-omics (scRNA- & scATAC-seq, spatial, and proteomics) and AI/ML-based methods to enable new druggable target identification, conduct <em>in silico</em> drug screening, map protein interactomes, and perform transcription factor activity fingerprinting. We are particularly interested in applying such tools to better characterize the functional diversity and state plasticity of cardiac stomal populations across various disesase states—a critical challenge for the development of <strong>precision anti-fibrotic therapies</strong>.
                 </p>
               </div>
             </div>

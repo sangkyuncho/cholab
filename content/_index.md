@@ -19,7 +19,7 @@ sections:
           position: right
           color: '#666'
       - title: Systems mechanobiology & <br>regenerative engineering
-        content: We take a **systems approach** to investigate mechanisms that drive tissue regeneration and fibrotic remodeling by integrating (i) molecular biology, (ii)tissue and biomaterials engineering, and (iii) data science.
+        content: We take a **systems approach** to investigate mechanisms that drive fibrotic remodeling and tissue regeneration by integrating (i) molecular biology, (ii) tissue and biomaterials engineering, and (iii) data science.
         align: left
         background:
           image:
