@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Sangkyun Cho
+title: Sangkyun Cho, PhD
 
 # Full Name (for SEO)
 first_name: Sangkyun
@@ -11,7 +11,7 @@ superuser: true
 
 
 # Role/position
-role: Assistant Professor, Department of Chemical & Biomolecular Engineering, and Biomedical Engineering (secondary)
+role: Assistant Professor of Chemical & Biomolecular Engineering, and Biomedical Engineering (secondary)
 
 # Organizations/Affiliations
 organizations:
@@ -29,15 +29,15 @@ interests:
 
 education:
   courses:
-    - course: Postdoc, Stanford University School of Medicine
+    - course: Postdoc/Instructor, Stanford University School of Medicine
       institution: 
-      year: 
+      year: 2025
     - course: PhD, University of Pennsylvania
       institution: 
-      year: 
+      year: 2019
     - course: BS, Johns Hopkins University
       institution: 
-      year: 
+      year: 2013
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons

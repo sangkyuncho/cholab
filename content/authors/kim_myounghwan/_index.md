@@ -1,20 +1,20 @@
 ---
 # Display name
-title: This could be you!
+title: Myoung Hwan Kim, PhD
 
 # Full name (for SEO)
-first_name: phd
-last_name: student
+first_name: Myoung Hwan
+last_name: Kim
 
 # Username (this should match the folder name)
 authors:
-  - phd_student
+  - kim_myounghwan
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Please email us if interested 👋
+role: Postdoctoral Fellow
 
 # Organizations/Affiliations
 organizations:
@@ -25,21 +25,22 @@ organizations:
 bio: 
 
 interests:
-  - 
-  - 
-  - 
+  - In vitro human tissue models
+  - Organoids
+  - Biofabrication
+  - Tissue engineering and regenerative medicine
 
 education:
   courses:
-    - course: 
+    - course: PhD, Penn State University
       institution: 
-      year: 
-    - course: 
+      year: 2024
+    - course: MS, Pukyong National University
       institution: 
-      year: 
-    - course: 
+      year: 2019
+    - course: BS, Pukyong National University
       institution: 
-      year: 
+      year: 2017
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -51,13 +52,13 @@ social:
     link: ''
   - icon: twitter
     icon_pack: fab
-    link: 
+    link: ''
   - icon: google-scholar
     icon_pack: ai
-    link: 
-  - icon: github
+    link: https://scholar.google.com/citations?user=mgfNREAAAAAJ&hl=en
+  - icon: linkedin
     icon_pack: fab
-    link: 
+    link: https://www.linkedin.com/in/mhkimm/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -73,4 +74,7 @@ user_groups:
   - Postdoctoral Fellows
 ---
 
+**Myoung Hwan (Hwan) Kim, PhD**, is a postdoctoral fellow in the Department of Chemical & Biomolecular Engineering at Johns Hopkins University. He is a biomedical engineer specializing in biofabrication and tissue engineering, integrating engineering and biology to develop advanced biofabrication strategies and engineer physiologically and functionally relevant human tissue models. His research focuses on applications in tissue regeneration, organ development, disease modeling, and mechanotransduction, with the goal of overcoming key challenges in fabricating engineered 3D human tissues that closely recapitulate native structure and function.
+
+Hwan was born and raised in South Korea. Outside of the lab, he enjoys bodybuilding, cooking, and traveling.
 
